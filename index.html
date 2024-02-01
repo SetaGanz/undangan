@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laura & Azam - The Wedding</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dany Laksono and Rindi Kurnianti's Wedding Invitation">
+    <meta name="author" content="Dany Laksono">
+	<!-- for facebook -->
+	<meta property="og:title" content="Rindi & Dany - The Wedding"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.rindidanywedding.com/"/>
+    <meta property="og:image" content="http://www.rindidanywedding.com/img/img_src.png"/>
+	<link rel="image_src" href="img/img_src.png">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- I really don't like putting this on top of page (-_-') -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	
+	<!-- CSSes -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css " rel="stylesheet" />
+	
+	<!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+	
+  </head>
+
+  <body onload='initmap()'>
+	<!-- navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#home"><sup>L</sup> &#9829; <sub>A</sub></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+		</div>
+		<div class="navbar-collapse collapse ">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#home"><i class="fa fa-home"></i> </a></li>
+				<li><a href="#undangan">Undangan</a></li>
+				<li><a href="#resepsi">Resepsi</a></li>
+				<li><a href="#bukutamu">Buku Tamu</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!-- Depan -->
+	
+	<section id="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<div class="well">
+						<img class="decore-top img-responsive" src="img/decor-1.png" alt=""/>
+						<h3>Undangan Pernikahan</h3>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-sm-9 pull-left" style="text-align:left">
+										<h1> Laura Alveriana </h1> 
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12 and">
+										<h1> & </h1>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-9 pull-right" style="text-align:right">
+										<h1>Muhammad Azam</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h2> Indramayu, 02 Febuari 2024</h2>
+						<img class="decore-bottom img-responsive" src="img/decor-3.png" alt=""/>
+					</div>
+				</div>
+			</div>		
+		</div>		
+	</section>
+	
+	<section id="undangan">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" style="padding: 0 15px">
+					<p>
+					<!--i>Segala puji bagi Allah Ta'ala yang telah menjadikan segala makhluk-Nya berpasang-pasangan.</i>
+					<br--><br>
+					Dengan memohon limpahan Ridho dan Kasih Sayang Allah Subhanahu Wa Ta'ala, kami bermaksud mengundang 
+					Bapak/Ibu dalam acara pernikahan kami:
+					<div class="row">
+						<div class="col-md-5">
+						<hr>					
+						<h2>Laura Alveriana</h2><br>
+						Putri dari Bpak H.Suhedra dan Ibu H.Melisa<br>
+						<hr>
+						</div>
+						<div class="col-md-2">
+						<br><br><br><i>dengan</i><br><br>
+						</div>
+						<div class="col-md-5">
+						<hr>
+						<h2 style="font-size:1.7em">Muhammad Azam</h2><br>
+						Putra dari Bapak H.Shomad Dan Ibu H.Astrid</H><br>
+						<hr>
+						</div>
+					</div>
+					<br>
+					Ungkapan terima kasih dan rasa syukur kami sampaikan atas kehadiran Bapak/Ibu/rekan sekalian 
+					atas kehadiran dan doa restu kepada kedua mempelai. 
+					<br><br>
+					Kami yang berbahagia,		
+					</p>
+					<div class="row">
+						<div class="col-md-6">
+						<b>Keluarga Bapak Hj.Suhendra</b>
+						</div>
+						<div class="col-md-6">
+						<b>Keluarga Bapak Hj.Shomad</b>
+						</div>
+					</div>
+					<br>
+					<!-- Modal -->
+					<div class="modal fade" id="callUndangan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-lg">
+						<div class="modal-content">
+						  <!--div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="undModalLabel">Undangan Kami</h4>
+						  </div-->
+						  <div class="modal-body">
+							<!-- Isi Modal -->
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							  </ol>
+
+							  <!-- Controls -->
+							  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							  </a>
+							  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							  </a>
+							</div>
+							<!-- Isi Modal -->
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-1" style="padding: 0 20px">
+				</div>
+				<div class="col-md-5" style="padding: 0 20px">
+					<div class="hjstories" style="padding: 0 20px">
+					<!--Carousel - no control-->
+						<div id="slideshow" class="carousel slide carousel-fade" data-ride="carousel">
+							<!--js script for good -->
+							<script>
+							$('.carousel').carousel({
+								interval: 7000,
+								pause: "hover",
+								wrap: true
+							});
+							</script>
+							<!-- all images are courtesy of hj-story.com -->
+							<div class="carousel-inner">
+								<div class="item active">
+								  <div class="backgr" style="background-image:url('img/pengantin.jpg');"></div>
+								</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#slideshow" data-slide="prev"></a>
+							<a class="right carousel-control" href="#slideshow" data-slide="next"></a>
+					</div>
+				</div>
+			</div>
+			</div> 
+		</div>
+		<img class="decor img-responsive" src="img/bottom.png">
+	</section>
+	
+	<section id="resepsi">
+		<div class="container">
+			<div class="row" style="margin: 0 -15px">
+				<div class="col-md-6">
+					<p>
+					<h1> Akad Nikah </h1>
+					<br>
+					Akad nikah insya Allah akan dilangsungkan pada:<br>
+					<br>
+					<i>
+					Jumat, 02 Febuari 2024<br>
+					Pukul 08.00 WIB<br>
+					</i>
+					<br>
+					Bertempat di Kediaman Mempelai Wanita,<br>
+					Smkn 1 Losarang Latai 2 Kelas XI-TJKT 1<br>
+					Santing, Losarang, Indramayu
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+		<div id="modalTiket" class="modal fade bs-example-modal-sm autoModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<button type="button" class="close" aria-hidden="true" data-dismiss="modal">&times;</button>
+					<iframe width="520" height="658" frameborder="0" scrolling="no" src="http://www.utiket.com/api2/price-calender.asp?lng=indonesia&dep=&dest=&domestic=indonesia&cur=IDR&pid="></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="bukutamu">
+		<div class="container">
+			<div class="jumbotron">
+			  <!--h2>"Wahai sekalian pemuda, siapa diantara kalian yang telah mampu untuk menikah maka hendaknya ia menikah, karena menikah dapat lebih menundukkan pandangan (kalian), dan lebih menjaga kehormatan" (Muttafaqqun 'Alaihi)</h2></br-->
+			  <h4>Diriwayatkan dari Abu Hurairah radhiyallaahu 'anhu, bahwasanya Nabi shallallaahu 'alaihi wa sallam apabila mendoakan dua orang yang menikah, maka beliau shallallaahu 'alaihi wa sallam mengucapkan:</h4>
+			  <h2>"Baarokallaahu laka, wa baaroka 'alaika, wa jama'a bainakumaa fii khairin"</h2>
+			  <h4><i>"Semoga Allah memberikan berkah kepadamu dalam masa senang dan susahmu, serta mengumpulkan kalian berdua dalam kebaikan (H.R At-Tirmidzi (1091). Dinyatakan Shahih oleh Al-Albani dalam Shahiihul Jaami' (4729))"</i></h4></br>
+			  <h4>Besar harapan kami kiranya Bapak/Ibu berkenan menghadiri acara pernikahan kami. Mempelai berdua dan keluarga memohon doa restu kepada para undangan agar kami dapat membentuk keluarga yang sakinah, serta mampu mengarungi bahtera kehidupan di bawah naungan ridho-Nya. </h4></br></br>
+			</div>
+		</div>
+	</section>
+	
+	<section id="footer">
+		<div class="foo">
+			<h6>Made with love by <a href="https://github.com/setaganz">Bayu Arya Seta</a> &copy; 2024</h6>
+		</div>
+	</section>
+	
+    <!-- javascriptnyo
+    ================================================== -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>     
+	<script src="js/jquery.scrollTo.min.js"></script>
+	
+	</body>
+</html>
